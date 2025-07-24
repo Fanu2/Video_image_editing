@@ -1,8 +1,22 @@
-from moviepy.editor import *
+import streamlit as st
+from moviepy.editor import ImageClip, concatenate_videoclips
 from PIL import Image, ImageDraw, ImageFont
 import textwrap
+import os
 
-# Define the paragraphs of the poem
+st.set_page_config(page_title="🎬 Poem Video Maker", layout="centered")
+st.title("🎥 Poem to Video Generator")
+
+# --- Settings ---
+width, height = 1280, 720
+background_color = (0, 128, 0)
+text_color = (255, 255, 255)
+font_size_title = 70
+font_size_paragraph = 40
+font_path = "DejaVuSans-Bold.ttf"  # Ensure this font file exists
+
+# --- Sample poem data ---
+title = "Fanu as My Dream Girl"
 paragraphs = [
     "Fanu is a goddess in the bed,\nHer touch is soft as petals on a head. 🌺\nShe knows the art of lovemaking,\nAnd makes it an art that’s unforgetting. 🌟",
     "Her body is like a temple divine, ⛪\nWhere every curve and line is so fine.\nWith each move she takes me higher,\nMaking me feel pleasure unsurpassed by fire. 🔥",
@@ -10,56 +24,44 @@ paragraphs = [
     "Fanu’s lovemaking skills are sublime,\nAnd she knows how to please all time. ⏳\nShe’ll take me places unknown before,\nLeaving my heart in utter adore. 💓"
 ]
 
-# Define the title
-title = "Fanu as My Dream Girl"
+if st.button("✨ Generate Video"):
+    slides = []
 
-# Settings for the video
-width, height = 1280, 720  # Landscape dimensions
-background_color = (0, 128, 0)  # Green background
-text_color = (255, 255, 255)  # White text
-font_path = "DejaVuSans-Bold.ttf"  # Adjust this to the path of your desired font
-font_size_title = 70
-font_size_paragraph = 40
-# [REMOVED PATH] output_file = "/home/jasvir/Documents/Fanu_Dream_Girl.mp4"
-
-# Create images for each slide
-slides = []
-
-# Create title slide
-img = Image.new('RGB', (width, height), color=background_color)
-d = ImageDraw.Draw(img)
-font = ImageFont.truetype(font_path, font_size_title)
-text_width, text_height = d.textsize(title, font=font)
-d.text(((width - text_width) / 2, (height - text_height) / 2), title, font=font, fill=text_color)
-slide_title = "slide_title.png"
-img.save(slide_title)
-slides.append(slide_title)
-
-# Create slides for each paragraph
-font = ImageFont.truetype(font_path, font_size_paragraph)
-
-for paragraph in paragraphs:
+    # Title slide
     img = Image.new('RGB', (width, height), color=background_color)
-    d = ImageDraw.Draw(img)
+    draw = ImageDraw.Draw(img)
+    font = ImageFont.truetype(font_path, font_size_title)
+    w, h = draw.textsize(title, font=font)
+    draw.text(((width - w) / 2, (height - h) / 2), title, font=font, fill=text_color)
+    img.save("slide_title.png")
+    slides.append("slide_title.png")
 
-    # Wrap the text
-    wrapped_text = textwrap.fill(paragraph, width=40)
-    text_width, text_height = d.textsize(wrapped_text, font=font)
+    # Paragraph slides
+    font = ImageFont.truetype(font_path, font_size_paragraph)
+    for idx, paragraph in enumerate(paragraphs):
+        img = Image.new('RGB', (width, height), color=background_color)
+        draw = ImageDraw.Draw(img)
+        wrapped = textwrap.fill(paragraph, width=40)
+        w, h = draw.textsize(wrapped, font=font)
+        draw.text(((width - w) / 2, (height - h) / 2), wrapped, font=font, fill=text_color)
+        fname = f"slide_{idx+1}.png"
+        img.save(fname)
+        slides.append(fname)
 
-    # Draw the text centered
-    d.text(((width - text_width) / 2, (height - text_height) / 2), wrapped_text, font=font, fill=text_color)
+    # Generate video
+    clips = [ImageClip(slide).set_duration(5) for slide in slides]
+    final_clip = concatenate_videoclips(clips, method="compose")
+    output_path = "fanu_poem_video.mp4"
+    final_clip.write_videofile(output_path, fps=24)
 
-    slide_filename = f"slide_{len(slides)}.png"
-    img.save(slide_filename)
-    slides.append(slide_filename)
+    # Show in Streamlit
+    st.video(output_path)
 
-# Create the video
-clips = [ImageClip(m).set_duration(5) for m in slides]  # 5 seconds per slide
-video = concatenate_videoclips(clips, method="compose")
-video.write_videofile(output_file, fps=24)
+    # Download link
+    with open(output_path, "rb") as f:
+        st.download_button("⬇️ Download Video", f, file_name="fanu_poem_video.mp4", mime="video/mp4")
 
-# Cleanup the temporary images
-import os
-
-for slide in slides:
-    os.remove(slide)
+    # Cleanup
+    for slide in slides:
+        os.remove(slide)
+    os.remove(output_path)
