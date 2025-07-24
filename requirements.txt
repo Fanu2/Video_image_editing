@@ -1,0 +1,29 @@
+# Core UI & App Framework
+streamlit
+
+# Image and video processing
+moviepy
+opencv-python
+Pillow
+imageio
+scikit-image
+matplotlib
+
+# Audio support
+pydub
+ffmpeg-python
+
+# Utility libraries
+numpy
+pandas
+
+# Optional enhancements
+tqdm
+requests
+
+# For PDF & export features
+fpdf
+openpyxl
+
+# For potential cloud deployments and static file hosting
+streamlit-extras
