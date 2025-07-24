@@ -1,3 +1,9 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 from PIL import Image, ImageEnhance, ImageOps
 
 def apply_color_transformations(input_image_path, output_folder):
@@ -35,7 +41,7 @@ def apply_color_transformations(input_image_path, output_folder):
 
 # Define the paths
 # [REMOVED PATH] input_image_path = "/home/jasvir/Music/Fanu/abc.jpeg"  # Update with your input image path
-# [REMOVED PATH] output_folder = "/home/jasvir/Music/Fanu/Transformed_Images"  # Update with your desired output folder
+# [REMOVED PATH]   # Update with your desired output folder
 
 # Ensure the output folder exists
 import os

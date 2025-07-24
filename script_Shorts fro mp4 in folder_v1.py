@@ -1,9 +1,15 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 import os
 from moviepy.editor import VideoFileClip
 
 # Define the folder containing your MP4 files
 # [REMOVED PATH] input_folder = "/home/jasvir/Pictures/Shorts/"
-# [REMOVED PATH] output_folder = "/home/jasvir/Pictures/Shorts/Processed/"
+# [REMOVED PATH] 
 max_duration = 60  # Maximum duration of YouTube Shorts in seconds
 
 # Create the output folder if it doesn't exist

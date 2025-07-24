@@ -1,10 +1,16 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 import os
 import subprocess
 
 # Define paths
 video_file = "/media/jasvir/My Passport/media/mp4/20221009_163800.mp4"
 music_file = "/media/jasvir/My Passport/media/m4a/Dhool Sammi-Aashiq jatt-VOL-1-EMI-OLD STUDIO PK.m4a"
-# [REMOVED PATH] output_folder = "/home/jasvir/Documents/Output/"
+# [REMOVED PATH] 
 output_file = os.path.join(output_folder, "output_video.mp4")
 
 # Create output folder if it doesn't exist

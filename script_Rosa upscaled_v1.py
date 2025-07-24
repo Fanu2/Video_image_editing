@@ -1,3 +1,9 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 import os
 from PIL import Image
 
@@ -33,5 +39,5 @@ def convert_images_to_svg(input_folder, output_folder, scale_factor=2):
 
 # Example usage
 # [REMOVED PATH] input_folder = "/home/jasvir/Music/Jacinta3/"
-# [REMOVED PATH] output_folder = "/home/jasvir/Music/Jacinta3/svg/"
+# [REMOVED PATH] 
 convert_images_to_svg(input_folder, output_folder, scale_factor=2)

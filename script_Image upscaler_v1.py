@@ -1,3 +1,9 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 import cv2
 import os
 
@@ -42,7 +48,7 @@ def upscale_images(input_folder, output_folder, scale_factor=2):
 
 # Example usage
 # [REMOVED PATH] input_folder = '/home/jasvir/Music/Movie work/studio/'
-# [REMOVED PATH] output_folder = '/home/jasvir/Music/Movie work/studio/upscaled/'
+# [REMOVED PATH] 
 scale_factor = 2  # Upscale by a factor of 2
 
 upscale_images(input_folder, output_folder, scale_factor)

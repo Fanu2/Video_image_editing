@@ -1,3 +1,9 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 import os
 import subprocess
 import shlex
@@ -27,7 +33,7 @@ def convert_png_to_svg(png_folder, svg_folder):
 
 # Define input and output folders
 # [REMOVED PATH] input_folder = '/home/jasvir/Music/Jodha2/'
-# [REMOVED PATH] output_folder = '/home/jasvir/Music/Jodha2/svg/'
+# [REMOVED PATH] 
 
 # Create the SVG folder
 create_svg_folder(output_folder)

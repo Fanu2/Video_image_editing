@@ -1,3 +1,9 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps
 import textwrap
 
@@ -64,7 +70,7 @@ poem_lines = [
 ]
 
 font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"  # Update with your font path
-# [REMOVED PATH] output_folder = "/home/jasvir/Music/Rosa/"
+# [REMOVED PATH] 
 
 # Ensure the output folder exists
 import os

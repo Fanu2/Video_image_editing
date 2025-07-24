@@ -1,3 +1,9 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 from PIL import Image, ImageDraw, ImageFont
 import os
 
@@ -50,7 +56,7 @@ texts = [
     "A symbol of care, helping us grow."
 ]
 
-# [REMOVED PATH] output_folder = "/home/jasvir/Music/Rosa/"
+# [REMOVED PATH] 
 
 # Ensure the output folder exists
 if not os.path.exists(output_folder):

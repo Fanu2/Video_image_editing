@@ -1,3 +1,9 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 import os
 from PIL import Image, ImageOps, ImageDraw
 
@@ -46,6 +52,6 @@ def process_images(input_folder, output_folder):
 
 
 # [REMOVED PATH] input_folder = '/home/jasvir/Documents/Slide show3/'
-# [REMOVED PATH] output_folder = '/home/jasvir/Documents/Slide show3/framed_images/'
+# [REMOVED PATH] 
 
 process_images(input_folder, output_folder)

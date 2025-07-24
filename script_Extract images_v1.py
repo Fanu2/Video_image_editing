@@ -1,3 +1,9 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 import cv2
 import os
 
@@ -40,7 +46,7 @@ def extract_images(video_path, output_folder, frame_rate=1):
 
 # Example usage
 # [REMOVED PATH] video_path = '/home/jasvir/Music/Movie work/studio/download.mp4'
-# [REMOVED PATH] output_folder = '/home/jasvir/Music/Movie work/studio/'
+# [REMOVED PATH] 
 frame_rate = 1  # Extract one frame per second
 
 extract_images(video_path, output_folder, frame_rate)

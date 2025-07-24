@@ -1,3 +1,9 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 from PIL import Image, ImageDraw, ImageFont
 import os
 import textwrap
@@ -60,7 +66,7 @@ poem_lines = [
     "Your love, my endless delight, With you, everything's right. 💞"
 ]
 
-# [REMOVED PATH] output_folder = "/home/jasvir/Music/Jodha/"
+# [REMOVED PATH] 
 
 # Ensure output directory exists
 os.makedirs(output_folder, exist_ok=True)

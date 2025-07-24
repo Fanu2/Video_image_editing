@@ -1,3 +1,9 @@
+import streamlit as st
+
+output_folder = st.text_input('Select output folder (enter path):', value='output')
+import os
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 import os
 from moviepy.editor import ImageSequenceClip
 
@@ -27,7 +33,7 @@ def create_svg_video(input_folder, output_folder, output_video_name):
 
 # Example usage
 # [REMOVED PATH] input_folder = '/home/jasvir/Documents/Jas/svg/'
-# [REMOVED PATH] output_folder = '/home/jasvir/Documents/Jas/svg_videos/'
+# [REMOVED PATH] 
 output_video_name = 'output_video.mp4'
 
 create_svg_video(input_folder, output_folder, output_video_name)
