@@ -1,6 +1,6 @@
 import os
 
-project_path = '/home/jasvir/PycharmProjects/Top50AutomationScripts/scripts/'
+# [REMOVED PATH] project_path = '/home/jasvir/PycharmProjects/Top50AutomationScripts/scripts/'
 
 additional_scripts = {
     'rotate_image.py': """\

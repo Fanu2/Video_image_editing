@@ -39,8 +39,8 @@ def extract_images(video_path, output_folder, frame_rate=1):
     print(f"Extracted {saved_frame_number} frames from the video.")
 
 # Example usage
-video_path = '/home/jasvir/Music/Movie work/studio/download.mp4'
-output_folder = '/home/jasvir/Music/Movie work/studio/'
+# [REMOVED PATH] video_path = '/home/jasvir/Music/Movie work/studio/download.mp4'
+# [REMOVED PATH] output_folder = '/home/jasvir/Music/Movie work/studio/'
 frame_rate = 1  # Extract one frame per second
 
 extract_images(video_path, output_folder, frame_rate)

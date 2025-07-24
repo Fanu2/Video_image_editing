@@ -41,8 +41,8 @@ def upscale_images(input_folder, output_folder, scale_factor=2):
 
 
 # Example usage
-input_folder = '/home/jasvir/Music/Movie work/studio/'
-output_folder = '/home/jasvir/Music/Movie work/studio/upscaled/'
+# [REMOVED PATH] input_folder = '/home/jasvir/Music/Movie work/studio/'
+# [REMOVED PATH] output_folder = '/home/jasvir/Music/Movie work/studio/upscaled/'
 scale_factor = 2  # Upscale by a factor of 2
 
 upscale_images(input_folder, output_folder, scale_factor)

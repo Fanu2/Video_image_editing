@@ -32,8 +32,8 @@ def create_movie(image_folder, output_video, duration=60, fps=15, target_size=(1
     video_clip.write_videofile(output_video, codec='libx264', threads=4)  # threads for faster processing
 
 # Define the paths
-image_folder = "/home/jasvir/Music/Fanu/Transformed_Images/"
-output_video = "/home/jasvir/Music/Fanu/Transformed_Images/movie_so_seconds.mp4"
+# [REMOVED PATH] image_folder = "/home/jasvir/Music/Fanu/Transformed_Images/"
+# [REMOVED PATH] output_video = "/home/jasvir/Music/Fanu/Transformed_Images/movie_so_seconds.mp4"
 
 # Specify the duration in seconds (so)
 so = 30  # Example: create a 30-second video

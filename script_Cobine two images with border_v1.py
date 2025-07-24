@@ -31,9 +31,9 @@ def combine_images_with_border(image1_path, image2_path, output_path, size, bord
     new_image.save(output_path)
 
 # Example usage
-image1_path = '/home/jasvir/Music/Combined/1.jpg'
-image2_path = '/home/jasvir/Music/Combined/2.jpg'
-output_path = '/home/jasvir/Music/Combined/combined_image.jpg'
+# [REMOVED PATH] image1_path = '/home/jasvir/Music/Combined/1.jpg'
+# [REMOVED PATH] image2_path = '/home/jasvir/Music/Combined/2.jpg'
+# [REMOVED PATH] output_path = '/home/jasvir/Music/Combined/combined_image.jpg'
 # Define the size to which both images will be resized
 resize_size = (300, 300)  # Example size (width, height)
 combine_images_with_border(image1_path, image2_path, output_path, size=resize_size, border_size=10, background_color=(255, 255, 255))

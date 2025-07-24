@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 # Define the URL and the output directory
 url = "https://huggingface.co/spaces/jbilcke-hf/ai-comic-factory"
-output_dir = "/home/jasvir/Music/Jacinta1/"
+# [REMOVED PATH] output_dir = "/home/jasvir/Music/Jacinta1/"
 
 # Ensure the output directory exists
 if not os.path.exists(output_dir):

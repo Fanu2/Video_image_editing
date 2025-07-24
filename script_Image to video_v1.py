@@ -31,8 +31,8 @@ def create_movie_from_images(input_folder, output_video, fps=24, target_size=(19
         video_clip.write_videofile(output_video, codec='libx264')
 
 # Define paths
-input_folder = '/home/jasvir/Music/png'
-output_video = '/home/jasvir/Music/png/output_video.mp4'
+# [REMOVED PATH] input_folder = '/home/jasvir/Music/png'
+# [REMOVED PATH] output_video = '/home/jasvir/Music/png/output_video.mp4'
 
 # Create the movie from PNG images
 create_movie_from_images(input_folder, output_video)

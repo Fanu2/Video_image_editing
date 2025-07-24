@@ -2,10 +2,10 @@ from moviepy.editor import VideoFileClip, clips_array
 
 # Paths to the video files
 video_paths = [
-    '/home/jasvir/Music/Movie work/5.mp4',
-    '/home/jasvir/Music/Movie work/6.mp4',
-    '/home/jasvir/Music/Movie work/4.mp4',
-    '/home/jasvir/Music/Movie work/7.mp4'
+# [REMOVED PATH]     '/home/jasvir/Music/Movie work/5.mp4',
+# [REMOVED PATH]     '/home/jasvir/Music/Movie work/6.mp4',
+# [REMOVED PATH]     '/home/jasvir/Music/Movie work/4.mp4',
+# [REMOVED PATH]     '/home/jasvir/Music/Movie work/7.mp4'
 ]
 
 # Duration for each clip in seconds
@@ -21,5 +21,5 @@ clips = [clip.resize(height=360) for clip in clips]  # Adjust height and width a
 final_clip = clips_array([[clips[0], clips[1]], [clips[2], clips[3]]])
 
 # Write the result to a file
-final_clip.write_videofile('/home/jasvir/Music/Movie work/output_video1.mp4', codec='libx264')
+# [REMOVED PATH] final_clip.write_videofile('/home/jasvir/Music/Movie work/output_video1.mp4', codec='libx264')
 

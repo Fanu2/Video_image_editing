@@ -23,7 +23,7 @@ Guides my heart to pure delight.
 """
 
 # Output file path
-output_svg = '/home/jasvir/Music/Jacinta2/RomanticPoem.svg'
+# [REMOVED PATH] output_svg = '/home/jasvir/Music/Jacinta2/RomanticPoem.svg'
 
 # Create SVG file with the poem
 create_poem_svg(poem, output_svg)

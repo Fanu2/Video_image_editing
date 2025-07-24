@@ -23,7 +23,7 @@ def png_to_svg(input_image, output_svg):
 
 
 # Example usage
-input_image = '/home/jasvir/Documents/Jass/3.png'
-output_svg = '/home/jasvir/Documents/Jass/3.svg'
+# [REMOVED PATH] input_image = '/home/jasvir/Documents/Jass/3.png'
+# [REMOVED PATH] output_svg = '/home/jasvir/Documents/Jass/3.svg'
 
 png_to_svg(input_image, output_svg)

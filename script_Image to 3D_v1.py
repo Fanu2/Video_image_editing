@@ -23,8 +23,8 @@ def create_3d_effect(image_path, output_path, depth=10):
     cv2.imwrite(output_path, output_image)
 
 # Define the paths
-input_image_path = '/home/jasvir/Music/Data4/out (8).jpg'
-output_image_path = '/home/jasvir/Music/Data4/3d_effect_image.jpg'
+# [REMOVED PATH] input_image_path = '/home/jasvir/Music/Data4/out (8).jpg'
+# [REMOVED PATH] output_image_path = '/home/jasvir/Music/Data4/3d_effect_image.jpg'
 
 # Apply the 3D effect
 create_3d_effect(input_image_path, output_image_path)

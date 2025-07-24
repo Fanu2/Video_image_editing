@@ -76,8 +76,8 @@ def create_video_from_images(input_folder, output_video, effects=None, duration_
 
 
 # Define paths
-input_folder = '/home/jasvir/Music/Jacinta2'
-output_video = '/home/jasvir/Music/Jacinta2/output_effects_video.mp4'
+# [REMOVED PATH] input_folder = '/home/jasvir/Music/Jacinta2'
+# [REMOVED PATH] output_video = '/home/jasvir/Music/Jacinta2/output_effects_video.mp4'
 
 # Effects to apply (add more effects as needed)
 effects = ['original', 'sepia', 'grayscale', 'invert', 'rotate', 'blur', 'sharpen']

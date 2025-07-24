@@ -27,7 +27,7 @@ def create_text_image(text, font_size=70, image_size=(1280, 720)):
 
 
 # Path to the video file
-video_file_path = "/home/jasvir/Music/Movie work/New video/nain.mp4"
+# [REMOVED PATH] video_file_path = "/home/jasvir/Music/Movie work/New video/nain.mp4"
 
 # List of titles to add to the video
 titles = [
@@ -80,7 +80,7 @@ for i, title in enumerate(titles):
 final_clip = CompositeVideoClip([video_clip] + title_clips)
 
 # Write the result to a file
-output_file_path = "/home/jasvir/Music/Movie work/New video/nain_mille_with_titles.mp4"
+# [REMOVED PATH] output_file_path = "/home/jasvir/Music/Movie work/New video/nain_mille_with_titles.mp4"
 final_clip.write_videofile(output_file_path, codec='libx264', audio_codec='aac')
 
 print(f"Video with titles saved successfully: {output_file_path}")

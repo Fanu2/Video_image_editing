@@ -3,7 +3,7 @@ from moviepy.editor import VideoFileClip, clips_array
 
 def main():
     # Path to the input video
-    input_video_path = '/home/jasvir/Music/Movie work/Split screen/1.mp4'
+# [REMOVED PATH]     input_video_path = '/home/jasvir/Music/Movie work/Split screen/1.mp4'
 
     # Load the video
     video = VideoFileClip(input_video_path)
@@ -32,7 +32,7 @@ def main():
     split_screen_video = split_screen_video.subclip(0, 60)
 
     # Output path
-    output_path = '/home/jasvir/Music/Movie work/Split screen/output_split_screen.mp4'
+# [REMOVED PATH]     output_path = '/home/jasvir/Music/Movie work/Split screen/output_split_screen.mp4'
 
     # Write the output video to a file
     split_screen_video.write_videofile(output_path, codec='libx264')

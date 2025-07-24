@@ -48,7 +48,7 @@ def main():
     position = (50, 450)
 
     # Output path
-    output_path = '/home/jasvir/Music/Movie work/Insert text into image/output_image.jpg'
+# [REMOVED PATH]     output_path = '/home/jasvir/Music/Movie work/Insert text into image/output_image.jpg'
 
     # Insert text into image
     insert_text(image_path, text, font_path, font_size, position, output_path)

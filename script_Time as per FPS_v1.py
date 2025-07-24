@@ -61,8 +61,8 @@ def create_movie(image_folder, output_video, display_duration=3, fps=24):
 
 
 # Define the paths
-image_folder = "/home/jasvir/Music/Data/"
-output_video = "/home/jasvir/Music/Data/animation_60_seconds.mp4"
+# [REMOVED PATH] image_folder = "/home/jasvir/Music/Data/"
+# [REMOVED PATH] output_video = "/home/jasvir/Music/Data/animation_60_seconds.mp4"
 
 # Call the function to create a video
 create_movie(image_folder, output_video, display_duration=1, fps=24)

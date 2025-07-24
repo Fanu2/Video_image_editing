@@ -60,9 +60,9 @@ def create_montage(input_dir, output_file, tile='x1', frame=10, geometry='+5+5')
 
 def main():
     # Directories
-    original_dir = '/home/jasvir/Documents/Jass/'
-    resized_dir = '/home/jasvir/Documents/Jass/resized/'
-    montage_file = '/home/jasvir/Documents/Jass/frame_with_border.jpg'
+# [REMOVED PATH]     original_dir = '/home/jasvir/Documents/Jass/'
+# [REMOVED PATH]     resized_dir = '/home/jasvir/Documents/Jass/resized/'
+# [REMOVED PATH]     montage_file = '/home/jasvir/Documents/Jass/frame_with_border.jpg'
 
     # Resize images
     resize_images(original_dir, resized_dir)

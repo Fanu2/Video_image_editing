@@ -41,9 +41,9 @@ def create_video_with_music(image_folder, audio_file, output_video, fps=24):
 
 
 # Define the paths
-image_folder = "/home/jasvir/Documents/Slide show6/"
-audio_file = "/home/jasvir/Documents/Slide show6/trend.mp3"
-output_video = "/home/jasvir/Documents/animation_with_music.mp4"
+# [REMOVED PATH] image_folder = "/home/jasvir/Documents/Slide show6/"
+# [REMOVED PATH] audio_file = "/home/jasvir/Documents/Slide show6/trend.mp3"
+# [REMOVED PATH] output_video = "/home/jasvir/Documents/animation_with_music.mp4"
 
 # Call the function
 create_video_with_music(image_folder, audio_file, output_video, fps=24)

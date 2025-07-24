@@ -32,6 +32,6 @@ def convert_images_to_svg(input_folder, output_folder, scale_factor=2):
             print(f"Converted and upscaled {filename} to {svg_filename}")
 
 # Example usage
-input_folder = "/home/jasvir/Music/Jacinta3/"
-output_folder = "/home/jasvir/Music/Jacinta3/svg/"
+# [REMOVED PATH] input_folder = "/home/jasvir/Music/Jacinta3/"
+# [REMOVED PATH] output_folder = "/home/jasvir/Music/Jacinta3/svg/"
 convert_images_to_svg(input_folder, output_folder, scale_factor=2)

@@ -43,7 +43,7 @@ def overlay_text_on_concatenated_video(input_folder, text_to_overlay, position='
     final_clip.write_videofile(output_video, codec='libx264', fps=24)
 
 if __name__ == "__main__":
-    input_folder = '/home/jasvir/Music/Jodha1/'
+# [REMOVED PATH]     input_folder = '/home/jasvir/Music/Jodha1/'
     text_to_overlay = "Text to overlay"
 
     overlay_text_on_concatenated_video(input_folder, text_to_overlay)

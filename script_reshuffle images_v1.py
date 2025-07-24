@@ -30,5 +30,5 @@ def reshuffle_images(directory):
     os.rmdir(temp_dir)
 
 
-directory = '/home/jasvir/Documents/Slide show3/framed_images/'
+# [REMOVED PATH] directory = '/home/jasvir/Documents/Slide show3/framed_images/'
 reshuffle_images(directory)

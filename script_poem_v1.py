@@ -64,5 +64,5 @@ for line in poem:
 video_clip = ImageSequenceClip(lyric_images, fps=1)  # Adjust FPS as needed
 
 # Export the video
-output_video_path = "/home/jasvir/Music/romantic_poem_video.mp4"
+# [REMOVED PATH] output_video_path = "/home/jasvir/Music/romantic_poem_video.mp4"
 video_clip.write_videofile(output_video_path, codec='libx264')

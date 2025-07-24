@@ -25,9 +25,9 @@ def create_movie_from_images(image_folder, audio_file, output_video, duration=60
     final_clip.write_videofile(output_video, codec='libx264', fps=24)
 
 # Define paths
-image_folder = "/home/jasvir/Documents/Slide show6/"
-audio_file = "/home/jasvir/Documents/Slide show6/trend.mp3"
-output_video = "/home/jasvir/Documents/movie_from_images_60s.mp4"
+# [REMOVED PATH] image_folder = "/home/jasvir/Documents/Slide show6/"
+# [REMOVED PATH] audio_file = "/home/jasvir/Documents/Slide show6/trend.mp3"
+# [REMOVED PATH] output_video = "/home/jasvir/Documents/movie_from_images_60s.mp4"
 
 # Create the 60-second movie from images with effects and music
 create_movie_from_images(image_folder, audio_file, output_video, duration=60)

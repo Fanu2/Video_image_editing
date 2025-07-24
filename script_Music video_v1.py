@@ -2,10 +2,10 @@ import os
 import subprocess
 
 # Define paths
-image_folder = '/home/jasvir/Documents/Today/'
-output_video = '/home/jasvir/Documents/Today/movie.mp4'
-final_output_video = '/home/jasvir/Documents/Today/movie_with_music.mp4'
-background_music = '/home/jasvir/Documents/Today/abc.mp3'
+# [REMOVED PATH] image_folder = '/home/jasvir/Documents/Today/'
+# [REMOVED PATH] output_video = '/home/jasvir/Documents/Today/movie.mp4'
+# [REMOVED PATH] final_output_video = '/home/jasvir/Documents/Today/movie_with_music.mp4'
+# [REMOVED PATH] background_music = '/home/jasvir/Documents/Today/abc.mp3'
 
 # Check if the image folder exists
 if not os.path.exists(image_folder):

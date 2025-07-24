@@ -37,6 +37,6 @@ def convert_to_shorts(input_video, output_video):
 
 if __name__ == "__main__":
     input_video_path = "/media/jasvir/My Passport/media/mp4/a1.mp4"  # Your video path
-    output_video_path = "/home/jasvir/Documents/a1.mp4"  # Desired output path
+# [REMOVED PATH]     output_video_path = "/home/jasvir/Documents/a1.mp4"  # Desired output path
 
     convert_to_shorts(input_video_path, output_video_path)

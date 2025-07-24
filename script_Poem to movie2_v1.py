@@ -27,7 +27,7 @@ text_color = (0, 0, 0)
 title_color = (255, 0, 0)  # Red color for the title
 
 # Output path
-output_path = "/home/jasvir/Music/Rosa1/"
+# [REMOVED PATH] output_path = "/home/jasvir/Music/Rosa1/"
 
 # Ensure the output directory exists
 os.makedirs(output_path, exist_ok=True)

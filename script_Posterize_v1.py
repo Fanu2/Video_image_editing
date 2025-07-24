@@ -33,8 +33,8 @@ def add_photo_frame(image_path, output_path, frame_thickness=30, frame_color=(0,
     cv2.destroyAllWindows()
 
 # Example usage:
-image_path = "/home/jasvir/Music/Image/1.jpg"
-output_path = "/home/jasvir/Music/Image/1_with_posterized_photo_frame.jpg"
+# [REMOVED PATH] image_path = "/home/jasvir/Music/Image/1.jpg"
+# [REMOVED PATH] output_path = "/home/jasvir/Music/Image/1_with_posterized_photo_frame.jpg"
 
 # Call the function to add a posterized photo frame and save the result
 add_photo_frame(image_path, output_path)

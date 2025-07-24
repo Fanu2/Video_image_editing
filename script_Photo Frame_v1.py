@@ -38,8 +38,8 @@ def add_border(image_path, output_path, border_size=30, border_color=(255, 255, 
     cv2.destroyAllWindows()
 
 # Example usage:
-image_path = "/home/jasvir/Music/Image/1.jpg"
-output_path = "/home/jasvir/Music/Image/1_with_border.jpg"
+# [REMOVED PATH] image_path = "/home/jasvir/Music/Image/1.jpg"
+# [REMOVED PATH] output_path = "/home/jasvir/Music/Image/1_with_border.jpg"
 
 # Call the function to add a border and save the result
 add_border(image_path, output_path, border_size=30, border_color=(255, 255, 255))

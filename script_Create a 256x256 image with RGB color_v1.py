@@ -16,6 +16,6 @@ for x in range(width):
         pixels[x, y] = (x, y, 0)
 
 # Save the resulting image to a file
-image.save('/home/jasvir/Music/Jacinta2/image.png')
+# [REMOVED PATH] image.save('/home/jasvir/Music/Jacinta2/image.png')
 
 print("Image created and saved as image.png")

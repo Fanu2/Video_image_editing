@@ -71,9 +71,9 @@ def create_pip_video(background_video, pip_video, output_video, x_offset, y_offs
 
 
 # Example usage
-background_video = '/home/jasvir/Music/Movie work/Pic in pic/5.mp4'
-pip_video = '/home/jasvir/Music/Movie work/Pic in pic/2.mp4'
-output_video = '/home/jasvir/Music/Movie work/Pic in pic/output_video5.mp4'
+# [REMOVED PATH] background_video = '/home/jasvir/Music/Movie work/Pic in pic/5.mp4'
+# [REMOVED PATH] pip_video = '/home/jasvir/Music/Movie work/Pic in pic/2.mp4'
+# [REMOVED PATH] output_video = '/home/jasvir/Music/Movie work/Pic in pic/output_video5.mp4'
 x_offset = 10  # X position for PiP video
 y_offset = 10  # Y position for PiP video
 scale_width = 320  # Width of PiP video

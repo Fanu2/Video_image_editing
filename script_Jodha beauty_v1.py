@@ -60,7 +60,7 @@ poem_lines = [
     "Your love, my endless delight, With you, everything's right. 💞"
 ]
 
-output_folder = "/home/jasvir/Music/Jodha/"
+# [REMOVED PATH] output_folder = "/home/jasvir/Music/Jodha/"
 
 # Ensure output directory exists
 os.makedirs(output_folder, exist_ok=True)

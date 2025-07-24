@@ -3,7 +3,7 @@ import subprocess
 import sys
 
 # Project path and virtual environment path
-project_path = '/home/jasvir/PycharmProjects/HuggingFaceInteractions'
+# [REMOVED PATH] project_path = '/home/jasvir/PycharmProjects/HuggingFaceInteractions'
 venv_path = os.path.join(project_path, 'venv')
 
 # Define the scripts to be created

@@ -45,7 +45,7 @@ def process_images(input_folder, output_folder):
                 print(f"Saved framed image: {output_path}")
 
 
-input_folder = '/home/jasvir/Documents/Slide show3/'
-output_folder = '/home/jasvir/Documents/Slide show3/framed_images/'
+# [REMOVED PATH] input_folder = '/home/jasvir/Documents/Slide show3/'
+# [REMOVED PATH] output_folder = '/home/jasvir/Documents/Slide show3/framed_images/'
 
 process_images(input_folder, output_folder)

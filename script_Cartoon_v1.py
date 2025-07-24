@@ -28,7 +28,7 @@ def cartoonize_image(input_image_path, output_image_path):
     cv2.destroyAllWindows()
 
 # Example usage:
-input_image_path = "/home/jasvir/Music/Image/1.jpg"
-output_image_path = "/home/jasvir/Music/Image/cartoonized_image.jpg"
+# [REMOVED PATH] input_image_path = "/home/jasvir/Music/Image/1.jpg"
+# [REMOVED PATH] output_image_path = "/home/jasvir/Music/Image/cartoonized_image.jpg"
 
 cartoonize_image(input_image_path, output_image_path)

@@ -22,6 +22,6 @@ def download_images(keywords, limit=10, output_directory="downloads"):
 if __name__ == "__main__":
     keywords = "beautiful scenery"
     limit = 20
-    output_directory = "/home/jasvir/Music/Jacinta2"
+# [REMOVED PATH]     output_directory = "/home/jasvir/Music/Jacinta2"
 
     download_images(keywords, limit, output_directory)

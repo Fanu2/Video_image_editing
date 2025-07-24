@@ -23,9 +23,9 @@ def mirror_image(image_path, output_path, mode='horizontal'):
     cv2.destroyAllWindows()
 
 # Example usage:
-image_path = "/home/jasvir/Music/Image/1.jpg"
-output_path_horizontal = "/home/jasvir/Music/Image/1_horizontal_mirror.jpg"
-output_path_vertical = "/home/jasvir/Music/Image/1_vertical_mirror.jpg"
+# [REMOVED PATH] image_path = "/home/jasvir/Music/Image/1.jpg"
+# [REMOVED PATH] output_path_horizontal = "/home/jasvir/Music/Image/1_horizontal_mirror.jpg"
+# [REMOVED PATH] output_path_vertical = "/home/jasvir/Music/Image/1_vertical_mirror.jpg"
 
 # Mirror horizontally
 mirror_image(image_path, output_path_horizontal, mode='horizontal')

@@ -44,12 +44,12 @@ lyric_clips = [ImageClip(img).set_duration(2) for img in lyric_images]
 final_clip = concatenate_videoclips(lyric_clips, method="compose")
 
 # Add audio
-audio_file_path = "/home/jasvir/Music/Your Song .mp3"  # Replace with your audio file path
+# [REMOVED PATH] audio_file_path = "/home/jasvir/Music/Your Song .mp3"  # Replace with your audio file path
 audio_clip = AudioFileClip(audio_file_path)
 final_clip = final_clip.set_audio(audio_clip)
 
 # Export the video
-output_video_path = "/home/jasvir/Music/romantic_poem_video.mp4"
+# [REMOVED PATH] output_video_path = "/home/jasvir/Music/romantic_poem_video.mp4"
 final_clip.write_videofile(output_video_path, codec='libx264', fps=24)
 
 # Clean up temporary image files

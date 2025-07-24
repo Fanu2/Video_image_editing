@@ -50,7 +50,7 @@ texts = [
     "A symbol of care, helping us grow."
 ]
 
-output_folder = "/home/jasvir/Music/Rosa/"
+# [REMOVED PATH] output_folder = "/home/jasvir/Music/Rosa/"
 
 # Ensure the output folder exists
 if not os.path.exists(output_folder):

@@ -20,7 +20,7 @@ text_color = (255, 255, 255)  # White text
 font_path = "DejaVuSans-Bold.ttf"  # Adjust this to the path of your desired font
 font_size_title = 70
 font_size_paragraph = 40
-output_file = "/home/jasvir/Documents/Fanu_Dream_Girl.mp4"
+# [REMOVED PATH] output_file = "/home/jasvir/Documents/Fanu_Dream_Girl.mp4"
 
 # Create images for each slide
 slides = []

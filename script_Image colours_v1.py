@@ -34,8 +34,8 @@ def apply_color_transformations(input_image_path, output_folder):
     print("Color transformations applied and images saved.")
 
 # Define the paths
-input_image_path = "/home/jasvir/Music/Fanu/abc.jpeg"  # Update with your input image path
-output_folder = "/home/jasvir/Music/Fanu/Transformed_Images"  # Update with your desired output folder
+# [REMOVED PATH] input_image_path = "/home/jasvir/Music/Fanu/abc.jpeg"  # Update with your input image path
+# [REMOVED PATH] output_folder = "/home/jasvir/Music/Fanu/Transformed_Images"  # Update with your desired output folder
 
 # Ensure the output folder exists
 import os

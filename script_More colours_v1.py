@@ -60,8 +60,8 @@ def apply_color_transformations(input_image_path, output_folder):
     print(f"Color transformations applied and images saved for {os.path.basename(input_image_path)}")
 
 # Define the paths
-image_folder = "/home/jasvir/Music/Data4a/"  # Update with your input image folder path
-output_folder = "/home/jasvir/Music/Data4a/Transformed_Images"  # Update with your desired output folder
+# [REMOVED PATH] image_folder = "/home/jasvir/Music/Data4a/"  # Update with your input image folder path
+# [REMOVED PATH] output_folder = "/home/jasvir/Music/Data4a/Transformed_Images"  # Update with your desired output folder
 
 # Ensure the output folder exists
 if not os.path.exists(output_folder):

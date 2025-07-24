@@ -22,6 +22,6 @@ def create_composite_image(input_dir, output_path, tile_layout="2x2", geometry="
 
 
 # Example usage
-input_directory = "/home/jasvir/Documents/Jass/"
+# [REMOVED PATH] input_directory = "/home/jasvir/Documents/Jass/"
 output_image = os.path.join(input_directory, "composite_image.jpg")
 create_composite_image(input_directory, output_image)

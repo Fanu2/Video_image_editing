@@ -8,7 +8,7 @@ class ImageSlideshow:
         self.root = root
         self.root.title("Image Slideshow")
         self.images = self.load_images_from_folder(
-            "/home/jasvir/Documents/Slide show/")  # Update with your image folder path
+# [REMOVED PATH]             "/home/jasvir/Documents/Slide show/")  # Update with your image folder path
         self.current_image_index = 0
         self.total_images = len(self.images)
 

@@ -21,6 +21,6 @@ def print_all_tags(file_path):
 
 
 # Path to the MP3 file
-file_path = '/home/jasvir/Music/Movie work/River Flows in You.mp3'
+# [REMOVED PATH] file_path = '/home/jasvir/Music/Movie work/River Flows in You.mp3'
 
 print_all_tags(file_path)

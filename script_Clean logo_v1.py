@@ -25,5 +25,5 @@ def create_clean_modern_logo(text, font_path, output_path):
 create_clean_modern_logo(
     text="DJ Blue",
     font_path="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-    output_path="/home/jasvir/Pictures/pic1/clean_modern_logo.png"
+# [REMOVED PATH]     output_path="/home/jasvir/Pictures/pic1/clean_modern_logo.png"
 )

@@ -2,11 +2,11 @@ from moviepy.editor import VideoFileClip, concatenate_videoclips, TextClip, Comp
 import os
 
 # Path to the directory containing video clips
-video_directory = '/home/jasvir/Music/Movie work/Trailer/'
+# [REMOVED PATH] video_directory = '/home/jasvir/Music/Movie work/Trailer/'
 # Path to the directory where the trailer will be saved
-output_directory = '/home/jasvir/Music/Movie work/Trailer/'
+# [REMOVED PATH] output_directory = '/home/jasvir/Music/Movie work/Trailer/'
 # Path to the background music file
-audio_file_path = '/home/jasvir/Music/Movie work/Trailer/background_music.mp3'
+# [REMOVED PATH] audio_file_path = '/home/jasvir/Music/Movie work/Trailer/background_music.mp3'
 
 # Ensure the output directory exists
 os.makedirs(output_directory, exist_ok=True)

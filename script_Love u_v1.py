@@ -31,7 +31,7 @@ def create_image_with_text(output_path, text="Princess Jodha", width=800, height
     print(f"Image saved to {output_path}")
 
 # Define the output path for the image
-output_path = "/home/jasvir/Music/Data/Love_you_Jassi2.png"
+# [REMOVED PATH] output_path = "/home/jasvir/Music/Data/Love_you_Jassi2.png"
 
 # Call the function to create the image
 create_image_with_text(output_path)

@@ -37,7 +37,7 @@ def create_animation(image_dir, output_video_path, fps=30, duration=60):
 
 def main():
     # Paths
-    input_dir = '/home/jasvir/Music/Movie work/Black and white/'
+# [REMOVED PATH]     input_dir = '/home/jasvir/Music/Movie work/Black and white/'
     output_dir = input_dir  # Output path same as input directory
 
     # List of color maps available in OpenCV

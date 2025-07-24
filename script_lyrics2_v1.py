@@ -40,5 +40,5 @@ for lyric in lyrics:
 video_clip = ImageSequenceClip(lyric_images, fps=1)  # Adjust the fps according to your preference
 
 # Export the video
-output_video_path = "/home/jasvir/Music/video.mp4"
+# [REMOVED PATH] output_video_path = "/home/jasvir/Music/video.mp4"
 video_clip.write_videofile(output_video_path, codec='libx264')

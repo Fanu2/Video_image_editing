@@ -45,8 +45,8 @@ def create_movie_from_images(input_folder, output_video, fps=30, target_size=(19
 
 
 # Define paths
-input_folder = '/home/jasvir/Music/Jacinta2'
-output_video = '/home/jasvir/Music/Jacinta2/output_movie.mp4'
+# [REMOVED PATH] input_folder = '/home/jasvir/Music/Jacinta2'
+# [REMOVED PATH] output_video = '/home/jasvir/Music/Jacinta2/output_movie.mp4'
 
 # Create the movie from images
 create_movie_from_images(input_folder, output_video)

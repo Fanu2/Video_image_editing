@@ -27,7 +27,7 @@ def rename_files(folder_path):
 
 
 # Define the folder path
-folder_path = "/home/jasvir/Music/Movie work/"
+# [REMOVED PATH] folder_path = "/home/jasvir/Music/Movie work/"
 
 # Call the function
 rename_files(folder_path)

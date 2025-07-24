@@ -64,7 +64,7 @@ poem_lines = [
 ]
 
 font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"  # Update with your font path
-output_folder = "/home/jasvir/Music/Rosa/"
+# [REMOVED PATH] output_folder = "/home/jasvir/Music/Rosa/"
 
 # Ensure the output folder exists
 import os

@@ -2,7 +2,7 @@ import os
 import subprocess
 
 # Path to your virtual environment
-venv_path = "/home/jasvir/PycharmProjects/VideoImageProcessing/venv"
+# [REMOVED PATH] venv_path = "/home/jasvir/PycharmProjects/VideoImageProcessing/venv"
 
 # Check if requirements.txt exists
 requirements_file = os.path.join(os.path.dirname(__file__), 'requirements.txt')
@@ -19,7 +19,7 @@ from PIL import Image
 import numpy as np
 
 # Path to the image directory
-image_dir = "/home/jasvir/Pictures/Jodha/"
+# [REMOVED PATH] image_dir = "/home/jasvir/Pictures/Jodha/"
 output_path = os.path.join(image_dir, "rotating_central_image.mp4")
 
 # Load the central image (1.png)

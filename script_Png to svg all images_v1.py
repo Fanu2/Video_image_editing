@@ -26,8 +26,8 @@ def convert_png_to_svg(png_folder, svg_folder):
             print(f"Failed to convert {png_file} to SVG. Error: {e}")
 
 # Define input and output folders
-input_folder = '/home/jasvir/Music/Jodha2/'
-output_folder = '/home/jasvir/Music/Jodha2/svg/'
+# [REMOVED PATH] input_folder = '/home/jasvir/Music/Jodha2/'
+# [REMOVED PATH] output_folder = '/home/jasvir/Music/Jodha2/svg/'
 
 # Create the SVG folder
 create_svg_folder(output_folder)

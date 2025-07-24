@@ -2,7 +2,7 @@ import bpy
 import os
 
 # Define the path to the folder containing your images
-image_folder = "/home/jasvir/Documents/Slide show6/"
+# [REMOVED PATH] image_folder = "/home/jasvir/Documents/Slide show6/"
 image_files = sorted([f for f in os.listdir(image_folder) if f.endswith('.png')])
 
 # Create a new Grease Pencil object

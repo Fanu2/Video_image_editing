@@ -45,8 +45,8 @@ def create_slow_slide_show(input_folder, output_video, duration_per_image=5, tar
 
 
 # Define paths
-input_folder = '/home/jasvir/Music/Jacinta2'
-output_video = '/home/jasvir/Music/Jacinta2/output_slow_slide_show.mp4'
+# [REMOVED PATH] input_folder = '/home/jasvir/Music/Jacinta2'
+# [REMOVED PATH] output_video = '/home/jasvir/Music/Jacinta2/output_slow_slide_show.mp4'
 
 # Create the slow slide show with resized images
 create_slow_slide_show(input_folder, output_video)

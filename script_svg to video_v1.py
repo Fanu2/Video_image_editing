@@ -26,8 +26,8 @@ def create_svg_video(input_folder, output_folder, output_video_name):
     clip.write_videofile(output_video_path, codec='libx264', fps=30)  # Adjust codec if needed
 
 # Example usage
-input_folder = '/home/jasvir/Documents/Jas/svg/'
-output_folder = '/home/jasvir/Documents/Jas/svg_videos/'
+# [REMOVED PATH] input_folder = '/home/jasvir/Documents/Jas/svg/'
+# [REMOVED PATH] output_folder = '/home/jasvir/Documents/Jas/svg_videos/'
 output_video_name = 'output_video.mp4'
 
 create_svg_video(input_folder, output_folder, output_video_name)

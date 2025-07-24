@@ -31,5 +31,5 @@ def create_playful_energetic_logo(text, font_path, output_path):
 create_playful_energetic_logo(
     text="DJ Blue",
     font_path="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-    output_path="/home/jasvir/Pictures/pic1/playful_energetic_logo.png"
+# [REMOVED PATH]     output_path="/home/jasvir/Pictures/pic1/playful_energetic_logo.png"
 )

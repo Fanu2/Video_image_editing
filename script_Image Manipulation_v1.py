@@ -41,7 +41,7 @@ def apply_posterization(image):
     return posterized_image
 
 # Example usage:
-input_image_path = "/home/jasvir/Music/Image/1.jpg"
-output_image_path = "/home/jasvir/Music/Image/stylized_image.jpg"
+# [REMOVED PATH] input_image_path = "/home/jasvir/Music/Image/1.jpg"
+# [REMOVED PATH] output_image_path = "/home/jasvir/Music/Image/stylized_image.jpg"
 
 stylize_image(input_image_path, output_image_path)

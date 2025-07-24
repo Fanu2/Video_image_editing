@@ -75,9 +75,9 @@ def create_video_from_images(images, video_path, fps=1):
 
 
 def main():
-    odt_path = '/home/jasvir/Music/Movie work/Epub/Collection of Poems.odt'
-    output_folder = '/home/jasvir/Music/Movie work/Epub/frames/'
-    video_path = '/home/jasvir/Music/Movie work/Epub/Collection_of_Poems1.mp4'
+# [REMOVED PATH]     odt_path = '/home/jasvir/Music/Movie work/Epub/Collection of Poems.odt'
+# [REMOVED PATH]     output_folder = '/home/jasvir/Music/Movie work/Epub/frames/'
+# [REMOVED PATH]     video_path = '/home/jasvir/Music/Movie work/Epub/Collection_of_Poems1.mp4'
 
     try:
         text = extract_text_from_odt(odt_path)

@@ -48,9 +48,9 @@ def create_montage(input_dir, output_file, tile='x1', frame=10, geometry='+5+5')
 
 
 def main():
-    input_dir = '/home/jasvir/Documents/Jass/'
-    resized_dir = '/home/jasvir/Documents/Jass/resized/'
-    output_file = '/home/jasvir/Documents/Jass/frame_with_border.jpg'
+# [REMOVED PATH]     input_dir = '/home/jasvir/Documents/Jass/'
+# [REMOVED PATH]     resized_dir = '/home/jasvir/Documents/Jass/resized/'
+# [REMOVED PATH]     output_file = '/home/jasvir/Documents/Jass/frame_with_border.jpg'
 
     print("Starting image resizing...")
     resize_images(input_dir, resized_dir)

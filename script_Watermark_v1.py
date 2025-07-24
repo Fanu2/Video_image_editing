@@ -17,8 +17,8 @@ def add_watermark(video_path, watermark_path, output_path):
     final_video.write_videofile(output_path, codec="libx264")
 
 # Usage
-video_path = "/home/jasvir/Pictures/pic1/Because yoou loved me.mp4"
-watermark_path = "/home/jasvir/Pictures/pic1/playful_energetic_logo.png"
-output_path = "/home/jasvir/Pictures/pic1/Because_you_loved_me_watermarked.mp4"
+# [REMOVED PATH] video_path = "/home/jasvir/Pictures/pic1/Because yoou loved me.mp4"
+# [REMOVED PATH] watermark_path = "/home/jasvir/Pictures/pic1/playful_energetic_logo.png"
+# [REMOVED PATH] output_path = "/home/jasvir/Pictures/pic1/Because_you_loved_me_watermarked.mp4"
 
 add_watermark(video_path, watermark_path, output_path)

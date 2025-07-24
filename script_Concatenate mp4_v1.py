@@ -26,8 +26,8 @@ def concatenate_videos(input_folder, output_video):
     final_clip.write_videofile(output_video, codec='libx264', fps=24)
 
 # Define paths
-input_folder = '/home/jasvir/Music/Jodha1'
-output_video = '/home/jasvir/Music/Jodha1/concatenated_video.mp4'
+# [REMOVED PATH] input_folder = '/home/jasvir/Music/Jodha1'
+# [REMOVED PATH] output_video = '/home/jasvir/Music/Jodha1/concatenated_video.mp4'
 
 # Concatenate videos in the input folder
 concatenate_videos(input_folder, output_video)

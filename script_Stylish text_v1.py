@@ -49,7 +49,7 @@ def create_stylish_text(text, font_path, output_path, image_size=(800, 600), fon
 # Define the paths and text
 text = "Love u Jodha"
 font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"  # Update with your font path
-output_path = "/home/jasvir/Music/Jodha/stylish_text.png"
+# [REMOVED PATH] output_path = "/home/jasvir/Music/Jodha/stylish_text.png"
 
 # Create stylish text with effects
 create_stylish_text(text, font_path, output_path)

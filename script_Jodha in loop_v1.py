@@ -62,6 +62,6 @@ def create_animation(input_folder, output_video):
     print(f"Animation saved as {output_video}")
 
 # Example usage
-input_folder = "/home/jasvir/Documents/Princess Jodha/Jodha9/"
-output_video = "/home/jasvir/Documents/Princess Jodha/Jodha9/video6.mp4"
+# [REMOVED PATH] input_folder = "/home/jasvir/Documents/Princess Jodha/Jodha9/"
+# [REMOVED PATH] output_video = "/home/jasvir/Documents/Princess Jodha/Jodha9/video6.mp4"
 create_animation(input_folder, output_video)

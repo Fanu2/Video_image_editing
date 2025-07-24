@@ -28,8 +28,8 @@ def create_animated_gif(image_folder, output_gif, duration=0.5):
 
 
 # Define the folder path and output gif path
-image_folder = "/home/jasvir/Documents/Slide show6/"
-output_gif = "/home/jasvir/Documents/Slide show6.gif"
+# [REMOVED PATH] image_folder = "/home/jasvir/Documents/Slide show6/"
+# [REMOVED PATH] output_gif = "/home/jasvir/Documents/Slide show6.gif"
 
 # Call the function
 create_animated_gif(image_folder, output_gif, duration=1.5)

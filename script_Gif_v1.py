@@ -16,7 +16,7 @@ def create_gif(input_image, output_gif, duration=0.5, loops=0):
     imageio.mimsave(output_gif, images, duration=duration, loop=loops)
 
 # Example usage:
-input_image = '/home/jasvir/Documents/abc.jpg'
-output_gif = '/home/jasvir/Documents/output.gif'
+# [REMOVED PATH] input_image = '/home/jasvir/Documents/abc.jpg'
+# [REMOVED PATH] output_gif = '/home/jasvir/Documents/output.gif'
 
 create_gif(input_image, output_gif, duration=0.5, loops=0)

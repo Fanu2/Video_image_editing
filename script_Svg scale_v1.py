@@ -46,8 +46,8 @@ def generate_html_with_svg(input_svg_path, output_html_path):
 
 
 # Example usage
-input_svg_path = '/home/jasvir/Music/Jacinta2/image2.svg'
-output_html_path = '/home/jasvir/Music/Jacinta2/rotating_scaling_image2.html'
+# [REMOVED PATH] input_svg_path = '/home/jasvir/Music/Jacinta2/image2.svg'
+# [REMOVED PATH] output_html_path = '/home/jasvir/Music/Jacinta2/rotating_scaling_image2.html'
 
 # Replace ID in SVG content with animatedElement for the first element to apply animation
 with open(input_svg_path, 'r') as file:
