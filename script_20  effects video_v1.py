@@ -1,7 +1,10 @@
+import streamlit as st
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 import numpy as np
 import os
-
+import tempfile
+import shutil
+import zipfile
 
 def apply_effects(image, output_folder):
     effects = [
@@ -27,21 +30,32 @@ def apply_effects(image, output_folder):
         ("flip_top_bottom", image.transpose(Image.FLIP_TOP_BOTTOM)),
     ]
 
-    # Ensure the output folder exists
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-
-    # Apply and save effects
     for name, img in effects:
         img.save(os.path.join(output_folder, f"{name}.png"))
 
+# --- Streamlit UI ---
+st.set_page_config(page_title="🖼 Image Effects Tool", layout="centered")
+st.title("🖼 Apply Creative Effects to Image")
 
-# Define the input image path and output folder
-input_image_path = "/home/jasvir/Music/Data4/ut.jpg"  # Update with your image path
-output_folder = "/home/jasvir/Music/Jacinta2"
+uploaded_file = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
+output_name = st.text_input("Name your output ZIP file", "image_effects.zip")
 
-# Open the input image
-image = Image.open(input_image_path)
+if uploaded_file and st.button("✨ Apply Effects"):
+    with st.spinner("Processing..."):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            img_path = os.path.join(tmpdir, uploaded_file.name)
+            with open(img_path, "wb") as f:
+                f.write(uploaded_file.read())
 
-# Apply effects and save images
-apply_effects(image, output_folder)
+            image = Image.open(img_path)
+            apply_effects(image, tmpdir)
+
+            zip_path = os.path.join(tmpdir, output_name)
+            with zipfile.ZipFile(zip_path, 'w') as zipf:
+                for filename in os.listdir(tmpdir):
+                    if filename.endswith(".png"):
+                        zipf.write(os.path.join(tmpdir, filename), arcname=filename)
+
+            with open(zip_path, "rb") as zf:
+                st.success("✅ All effects applied successfully!")
+                st.download_button("📦 Download All Effects (ZIP)", data=zf, file_name=output_name, mime="application/zip")
